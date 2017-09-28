@@ -407,7 +407,7 @@ function! AutoPairsReturn()
     if &filetype == 'coffeescript' || &filetype == 'coffee'
       return "\<ESC>".cmd."k==o"
     else
-      return "\<ESC>".cmd."=ko"
+      return "\<ESC>ko\t".cmd
     endif
   end
   return ''
